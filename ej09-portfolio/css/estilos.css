@@ -1,0 +1,12 @@
+/* Estilos propios del portfolio */
+:root {
+  --bs-primary: #2457a6;
+  --bs-primary-rgb: 36, 87, 166;
+}
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 76px; }
+
+@media (max-width: 575.98px) {
+  .display-5 { font-size: 2.1rem; }
+}
