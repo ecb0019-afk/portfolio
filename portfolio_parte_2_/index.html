@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio personal de Eloy Centeno Bruña, estudiante de Desarrollo de Aplicaciones Web.">
+  <title>Eloy Centeno Bruña · Desarrollador web junior</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top cabecera" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#sobre-mi">Eloy Centeno</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="sobre-mi" class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-4 col-lg-3 text-center order-md-2">
+            <img src="images/foto-perfil.jpg" alt="Foto de perfil de Eloy Centeno" width="180" height="180" class="foto-perfil img-fluid">
+          </div>
+          <div class="col-12 col-md-8 col-lg-9 order-md-1">
+            <h1 class="display-4 fw-bold">Hola, soy <span>Eloy Centeno</span></h1>
+            <h2 class="h4 fw-bold mb-3">Desarrollador web junior · DAW</h2>
+            <p class="hero-copy">Soy estudiante de último año de Desarrollo de Aplicaciones Web. Me interesa el mundo de la programación y el desarrollo de páginas web. Actualmente sigo aprendiendo y mejorando mis conocimientos para crecer como desarrollador.</p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a href="#proyectos" class="btn btn-dark">Ver proyectos</a>
+              <a href="docs/cv.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-title="Se abre el PDF en una pestaña nueva">Descargar CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Proyectos</h2>
+        <p class="texto-apagado mb-4">He realizado numerosos proyectos y ejercicios durante mi formación como programador, incluyendo trabajos de diseño con Figma y desarrollo web con Bootstrap.</p>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 project-card">
+              <img src="images/proyecto-1.png" class="card-img-top" width="800" height="450" alt="Captura del portfolio personal">
+              <div class="card-body">
+                <h3 class="h5 card-title">Portfolio personal</h3>
+                <p class="card-text">Esta misma web: maquetada con Bootstrap, accesible, responsive y publicada en GitHub Pages.</p>
+                <p class="mb-0"><span class="badge etiqueta">HTML5</span> <span class="badge etiqueta">CSS3</span> <span class="badge etiqueta">Bootstrap 5</span> <span class="badge etiqueta">JavaScript</span> <span class="badge etiqueta">GitHub Pages</span></p>
+              </div>
+              <div class="card-footer bg-transparent d-flex flex-wrap gap-2">
+                <a href="https://ecb0019-afk.github.io/portfolio/ej09-portfolio/" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> del portfolio personal</span></a>
+                <a href="https://github.com/ecb0019-afk/portfolio" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> del portfolio personal</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 project-card">
+              <img src="images/proyecto-2.png" class="card-img-top" width="800" height="450" alt="Captura del despliegue con contenedores y CI/CD">
+              <div class="card-body">
+                <h3 class="h5 card-title">Despliegue con contenedores y CI/CD</h3>
+                <p class="card-text">Aplicación Node.js con MySQL desplegada con Docker Compose, Apache como proxy inverso y un pipeline de GitHub Actions.</p>
+                <p class="mb-0"><span class="badge etiqueta">Node.js</span> <span class="badge etiqueta">Docker</span> <span class="badge etiqueta">MySQL</span> <span class="badge etiqueta">Apache</span> <span class="badge etiqueta">GitHub Actions</span></p>
+              </div>
+              <div class="card-footer bg-transparent d-flex flex-wrap gap-2">
+                <a href="https://github.com/ecb0019-afk/practica-ud03" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> del despliegue con contenedores</span></a>
+                <a href="https://github.com/ecb0019-afk/practica-ud03/actions" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">Pipeline<span class="visually-hidden"> de GitHub Actions</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 project-card">
+              <img src="images/proyecto-3.png" class="card-img-top" width="800" height="450" alt="Captura de las actividades de JavaScript">
+              <div class="card-body">
+                <h3 class="h5 card-title">Boletín de actividades de JavaScript</h3>
+                <p class="card-text">Diez actividades de JavaScript del módulo de Desarrollo Web en Entorno Cliente.</p>
+                <p class="mb-0"><span class="badge etiqueta">JavaScript</span> <span class="badge etiqueta">HTML5</span> <span class="badge etiqueta">DOM</span> <span class="badge etiqueta">Git</span></p>
+              </div>
+              <div class="card-footer bg-transparent d-flex flex-wrap gap-2">
+                <a href="https://github.com/ecb0019-afk" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (boletín de JavaScript)</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="py-5 fondo-gris">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Mi caja de herramientas</h2>
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-lg-3"><article class="skill-card"><h3>Programación</h3><p class="mb-0"><span class="badge etiqueta">HTML</span> <span class="badge etiqueta">CSS</span> <span class="badge etiqueta">JavaScript</span> <span class="badge etiqueta">PHP</span> <span class="badge etiqueta">Java</span></p></article></div>
+          <div class="col-12 col-sm-6 col-lg-3"><article class="skill-card"><h3>Bases de datos</h3><p class="mb-0"><span class="badge etiqueta">SQL</span> <span class="badge etiqueta">MySQL</span></p></article></div>
+          <div class="col-12 col-sm-6 col-lg-3"><article class="skill-card"><h3>Herramientas</h3><p class="mb-0"><span class="badge etiqueta">Bootstrap</span> <span class="badge etiqueta">Figma</span> <span class="badge etiqueta">Git</span> <span class="badge etiqueta">GitHub</span> <span class="badge etiqueta">VS Code</span></p></article></div>
+          <div class="col-12 col-sm-6 col-lg-3"><article class="skill-card"><h3>Idiomas</h3><p class="mb-0"><span class="badge etiqueta">Inglés B1</span></p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="py-5">
+      <div class="container">
+        <div class="row g-4 gx-lg-5">
+          <div class="col-lg-5">
+            <h2 class="fw-bold">Formación</h2>
+            <p class="texto-apagado mt-3">Una base que sigue creciendo, paso a paso.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="d-flex flex-wrap justify-content-between gap-2"><h3>Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</h3><span class="badge rounded-pill text-bg-dark align-self-start">En curso</span></div>
+                <p>MEDAC · Último año</p>
+              </article>
+              <article class="timeline-item"><h3>Bachillerato</h3><p>Título obtenido</p></article>
+              <article class="timeline-item"><h3>Educación Secundaria Obligatoria</h3><p>Título obtenido</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-5 fondo-gris">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="fw-bold">Contacto</h2>
+            <p class="texto-apagado mt-4 mb-4">Si quieres ponerte en contacto conmigo, puedes escribirme mediante este formulario o encontrarme en mis perfiles.</p>
+            <a class="contact-link" href="mailto:ecb0019@alu.medac.es"><i class="bi bi-envelope" aria-hidden="true"></i> ecb0019@alu.medac.es</a>
+            <div class="mt-3">
+              <a class="contact-link" href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUBpaFR9ySGWRLHMVThnwxA%3D%3D" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a>
+              <a class="contact-link" href="https://github.com/ecb0019-afk/portfolio" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card card-body">
+              <form id="formulario-contacto" action="mailto:ecb0019@alu.medac.es" method="post" enctype="text/plain" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Tu nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="¿Cómo te llamas?" autocomplete="name" required>
+                    <div class="invalid-feedback">Escribe tu nombre.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Tu correo</label>
+                    <input type="email" class="form-control" id="email" name="Correo" placeholder="nombre@correo.com" autocomplete="email" required>
+                    <div class="invalid-feedback">Escribe un correo válido, por ejemplo nombre@correo.com.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" name="Asunto" placeholder="¿De qué quieres hablar?" autocomplete="off" required>
+                    <div class="invalid-feedback">Indica el asunto del mensaje.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="Mensaje" rows="5" placeholder="Cuéntame un poco más..." autocomplete="off" minlength="10" required></textarea>
+                    <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 Eloy Centeno Bruña</p>
+      <p class="mb-0 fs-4">
+        <a href="https://github.com/ecb0019-afk" class="me-3" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Eloy Centeno"><i class="bi bi-github" aria-hidden="true"></i></a>
+        <a href="mailto:ecb0019@alu.medac.es"  aria-label="Enviar un correo a Eloy Centeno"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      </p>
+      <p class="mb-0 small">Última actualización: <time datetime="2026-11-17">17 de noviembre de 2026</time></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
