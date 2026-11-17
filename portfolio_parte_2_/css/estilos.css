@@ -1,0 +1,84 @@
+/colores
+:root {
+  --ink: #24233b;
+  --muted: #5b5a6b;
+  --accent: #6a45b8;
+  --accent-hover: #57379a;
+  --gris: #f3f3f6;
+  --borde: #8a8799;
+
+  --bs-primary: #6a45b8;
+  --bs-primary-rgb: 106, 69, 184;
+  --bs-body-color: #24233b;
+  --bs-form-invalid-color: #a71d2a;
+  --bs-form-invalid-border-color: #a71d2a;
+}
+
+/base
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+a { color: inherit; }
+section { scroll-margin-top: 5rem; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.texto-apagado { color: var(--muted); }
+.fondo-gris { background: var(--gris); }
+
+/navbar ya corregido de la parte 1
+.cabecera {
+  --bs-navbar-color: var(--ink);
+  --bs-navbar-hover-color: var(--accent);
+  --bs-navbar-brand-color: var(--ink);
+  --bs-navbar-brand-hover-color: var(--accent);
+  --bs-navbar-toggler-border-color: var(--borde);
+  background: #fff;
+  border-bottom: 1px solid var(--borde);
+}
+
+/portada
+.hero h1 span { color: var(--accent); }
+.foto-perfil { width: 180px; max-width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+
+/botones corregidos de la parte 1
+.btn-dark {
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: var(--accent-hover);
+  --bs-btn-hover-border-color: var(--accent-hover);
+  --bs-btn-active-bg: var(--accent-hover);
+  --bs-btn-active-border-color: var(--accent-hover);
+}
+.btn-outline-dark {
+  --bs-btn-color: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: var(--accent);
+  --bs-btn-hover-border-color: var(--accent);
+  --bs-btn-active-bg: var(--accent-hover);
+  --bs-btn-active-border-color: var(--accent-hover);
+}
+
+/proyectos y la correccion de la parte 1
+.project-card .card-img-top { height: 10rem; object-fit: cover; }
+.skill-card { height: 100%; padding: 1rem; border: 1px solid var(--borde); border-radius: .5rem; background: #fff; }
+.skill-card h3 { font-size: 1.1rem; }
+.etiqueta { background: #fff; color: var(--ink); border: 1px solid var(--borde); font-weight: 500; }
+
+.timeline { border-left: 2px solid var(--borde); padding-left: 1.25rem; }
+.timeline-item { padding-bottom: 1.5rem; }
+.timeline-item h3 { font-size: 1.1rem; }
+.timeline-item p { margin: 0; color: var(--muted); }
+
+/contactos
+.form-control { border-color: var(--borde); }
+.contact-link { display: inline-flex; align-items: center; gap: .5rem; margin-right: 1rem; }
+
+/pie pagina
+.pie { background: var(--gris); border-top: 1px solid var(--borde); }
+
+/* 10. Responsive (breakpoints de Bootstrap) */
+@media (min-width: 768px) {
+  .project-card .card-img-top { height: 9rem; }
+}
+@media (min-width: 992px) {
+  .project-card .card-img-top { height: 11rem; }
+}
